@@ -1,0 +1,21 @@
+extends ./layout.pug
+block content
+  form(method="POST", action="/favorites")
+    p  
+      label(for="species") Species Name
+      input(type="text" name="species" id="species")
+    p
+      label(for="scientific") Scientific Name
+      input(type="text" name="scientific" id="scientific")
+    p
+      label(for="image_url") Image URL
+      input(type="text" name="image_url" id="image_url")    
+    p
+      label(for="description") Description
+    p
+      textarea(name="description" id="description" rows="7" cols="70")
+    p
+      input(type="checkbox" name="extinct" id="extinct")  
+      label(for="extinct") Extinct
+    p
+      input(type="submit")

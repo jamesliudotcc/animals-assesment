@@ -1,0 +1,16 @@
+extends ./layout.pug
+block content
+  each animal in animals
+    if animal.extinct == true
+      .red
+        h2= animal.species_name
+    else
+      .black
+        h2= animal.species_name        
+    p
+      b Scientific Name: 
+      em= animal.scientific_name
+    img(src=animal.image_url)
+
+    p= animal.description
+    hr
