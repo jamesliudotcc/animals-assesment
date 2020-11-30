@@ -27,7 +27,7 @@
     "request": "^2.88.0",
     "typeorm": "0.2.11",
     "typescript": "3.2.2",
-    "validator": "^10.11.0"
+    "validator": "^13.5.0"
   },
   "devDependencies": {
     "@types/connect-flash": "0.0.34",
